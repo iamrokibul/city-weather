@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        main {
+            background: url(img/weather.jpg) no-repeat;
+            background-size: cover;
+            height: 95.5vh;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2 class="text-white text-center pt-5">Search Weather by City Name</h2>
+            <form class="col-md-6 m-auto py-3">
+                <div class="input-group mb-3">
+                    <input id="search_field" type="text" class="form-control" placeholder="Enter a location for Weather (Example: Dhaka)">
+                    <div class="input-group-append">
+                        <button id="search_btn" type="button" class="btn btn-warning">Search</button>
+                    </div>
+                </div>
+            </form>
+            <div class="weather-status text-white text-center">
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <h1 id="city-name"></h1>
+                <h3><span id="temperature"></span>&deg;C</h3>
+                <h1 class="lead" id="weather-type"></h1>
+            </div>
+        </div>
+    </main>
+    <!-- Footer area -->
+    <footer class="bg-white py-2 text-center">
+        <p class="m-0">&copy; 2023 | Developed by <a href="https://iamrokibul.com" target="_blank">Rokibul Hasan</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
